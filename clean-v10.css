@@ -1,0 +1,16 @@
+@import url('clean-v8.css?v=10');
+
+/* v10: restore reliable hero rendering after failed inline-data experiment */
+.hero{height:270px!important;background:#fff!important;position:relative!important;overflow:hidden!important}
+.hero-photo{position:absolute!important;inset:0!important;background-image:url('assets/hero-master.svg')!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}
+.hero-fade{display:block!important;background:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.94) 19%,rgba(255,255,255,.68) 38%,rgba(255,255,255,.08) 59%,rgba(255,255,255,0) 73%)!important}
+.hero-inner{display:flex!important;align-items:center!important;position:relative!important;z-index:2!important}
+.hero-copy{display:block!important;visibility:visible!important;opacity:1!important}
+.hero h1,.hero p,.hero .kicker,.hero .btn{display:initial!important;visibility:visible!important;opacity:1!important}
+.hero .btn{display:inline-flex!important}
+
+/* keep rows visually stable */
+.group-row{height:88px!important}.gphoto{height:62px!important}
+.ai{padding-top:16px!important}.ai-box{min-height:118px!important}
+
+@media(max-width:700px){.hero{height:238px!important}.hero h1{font-size:30px!important}.group-row{height:73px!important}.gphoto{display:none!important}}
