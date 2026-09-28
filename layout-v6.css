@@ -1,0 +1,80 @@
+/* PROMOTOBLOK layout stabilization pass v6
+   Goal: keep all blocks on one grid from normal desktop widths through very wide viewports.
+   Browser zoom may visually shrink/enlarge the whole page, but geometry must not drift. */
+html,body{min-width:320px;overflow-x:hidden}
+
+/* One master grid for header and every content section */
+.container{
+  width:calc(100% - 48px)!important;
+  max-width:1180px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+.header-row{width:100%;min-width:0}
+.main-nav,.header-spacer,.search,.phone{min-width:0}
+.search{flex:0 1 245px}
+
+.hero{width:100%;}
+.hero-inner{width:calc(100% - 48px)!important;max-width:1180px!important}
+.hero-photo{inset:0!important}
+
+/* category rows: fixed text zone + fluid image zone, never overflow */
+.group-row{
+  width:100%;
+  grid-template-columns:46px 48px minmax(230px,260px) minmax(0,1fr) 28px!important;
+}
+.gcopy,.gphoto{min-width:0}
+.gphoto{width:100%!important;max-width:none!important}
+
+.ai-box,.telegram,.service-box,.brands-img{width:100%;max-width:100%}
+.ask{width:100%;max-width:760px}
+.ask input{min-width:0}
+
+.product-grid,.article-grid,.why-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+.product,.article,.why-grid>div{min-width:0}
+.product h3,.article-body h3,.article-body p{overflow-wrap:anywhere}
+
+.footer-grid{grid-template-columns:minmax(140px,1.1fr) repeat(4,minmax(0,1fr))!important}
+.footer-grid>*{min-width:0}
+
+/* Laptop / compact desktop: preserve same composition, only compress auxiliary chrome */
+@media (max-width:1120px) and (min-width:701px){
+  .container,.hero-inner{width:calc(100% - 36px)!important}
+  .header-row{gap:12px!important}
+  .main-nav{gap:16px!important;font-size:10px!important}
+  .search{flex-basis:200px!important;width:200px!important}
+  .logo{width:128px!important}
+  .phone{font-size:9px!important}
+  .group-row{grid-template-columns:40px 42px minmax(205px,235px) minmax(0,1fr) 24px!important}
+  .gcopy h2{font-size:14px!important}
+  .service-box{grid-template-columns:220px minmax(0,1fr) 190px!important}
+}
+
+/* Tablet: switch deliberately instead of letting desktop grid collapse */
+@media (max-width:900px) and (min-width:701px){
+  .search{display:none!important}
+  .main-nav{gap:14px!important}
+  .hero h1{font-size:36px!important}
+  .group-row{grid-template-columns:38px 40px minmax(190px,220px) minmax(0,1fr) 22px!important}
+  .product-grid,.article-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .why-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .footer-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+}
+
+/* Mobile keeps its own approved composition and never inherits desktop widths */
+@media (max-width:700px){
+  .container,.hero-inner{width:calc(100% - 24px)!important;max-width:none!important}
+  .group-row{grid-template-columns:31px 39px minmax(0,1fr) 20px!important}
+  .gphoto{display:none!important}
+  .product-grid,.article-grid{grid-template-columns:1fr!important}
+  .why-grid{grid-template-columns:1fr 1fr!important}
+  .footer-grid{grid-template-columns:1fr 1fr!important}
+}
+
+/* Very wide viewports / extreme browser zoom: do not stretch approved design */
+@media (min-width:1600px){
+  .container,.hero-inner{max-width:1180px!important}
+  .hero-photo{background-size:cover!important}
+  .group-row,.ai-box,.product-grid,.article-grid,.brands-img,.why-grid,.service-box{max-width:1180px}
+}
