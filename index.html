@@ -1,143 +1,112 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>PROMOTOBLOK — техника для участка, дома и фермы</title>
-  <meta name="description" content="PROMOTOBLOK — техника для участка, дома и фермы">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PROMOTOBLOK — техника для участка, дома и фермы</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
-  <div class="container header-row">
-    <button class="menu-icon" aria-label="Открыть меню"><span></span><span></span><span></span></button>
-    <a class="logo" href="index.html" aria-label="PROMOTOBLOK">
-      <span class="logo-leaf">◆</span><span>PROMOTOBLOK</span>
-    </a>
-    <nav class="main-nav">
+  <div class="top container">
+    <button class="menu" aria-label="Меню">☰</button>
+    <a class="logo" href="index.html" aria-label="PROMOTOBLOK"></a>
+    <nav class="nav">
       <a href="catalog.html">Каталог⌄</a>
       <a href="#delivery">Доставка и оплата</a>
       <a href="#service">Сервис</a>
       <a href="#about">О нас</a>
     </nav>
-    <div class="header-tools">
-      <div class="search">⌕ <span>Поиск по товарам, категориям...</span></div>
-      <a href="#favorites" aria-label="Избранное">♡</a>
-      <a href="#cart" aria-label="Корзина">🛒</a>
-      <a class="phone" href="tel:+375291234567">+375 29 123-45-67<small>Заказать звонок</small></a>
-    </div>
+    <div class="search">⌕ <span>Поиск по товарам, категориям...</span></div>
+    <div class="head-icons">♡　🛒</div>
+    <div class="phone">+375 29 123-45-67<small>Заказать звонок</small></div>
   </div>
 </header>
 
 <main>
-<section class="hero-master">
+<section class="hero">
+  <div class="hero-photo"></div>
   <div class="hero-overlay"></div>
   <div class="container hero-inner">
     <div class="hero-copy">
-      <div class="hero-kicker">ТЕХНИКА ДЛЯ УЧАСТКА, ДОМА И ФЕРМЫ</div>
+      <div class="eyebrow">ТЕХНИКА ДЛЯ УЧАСТКА, ДОМА И ФЕРМЫ</div>
       <h1>Надёжная техника<br>для ваших задач</h1>
       <p>Поможем выбрать, доставим и поддержим.<br>Всё, чтобы ваш участок приносил радость,<br>а не хлопоты.</p>
-      <a class="button primary" href="catalog.html">Перейти в каталог <span>→</span></a>
+      <a class="btn" href="catalog.html">Перейти в каталог　→</a>
     </div>
   </div>
 </section>
 
-<section class="category-master" id="groups">
-  <div class="container category-list">
-    <a class="category-row" href="catalog.html#land">
-      <div class="cat-no">01</div>
-      <div class="cat-icon tractor"></div>
-      <div class="cat-copy"><h2>Земля и хозяйство</h2><p>Мотоблоки, мототракторы,<br>навесное оборудование</p></div>
-      <div class="cat-photo land-photo"></div>
-      <div class="cat-arrow">→</div>
+<section class="groups" id="groups">
+  <div class="container">
+    <a class="group-row" href="catalog.html#land">
+      <div class="num">01</div><span class="gicon icon1"></span>
+      <div class="gcopy"><h3>Земля и хозяйство</h3><p>Мотоблоки, мототракторы,<br>навесное оборудование</p></div>
+      <span class="gphoto cat1"></span><span class="arrow">→</span>
     </a>
-    <a class="category-row" href="catalog.html#lawn">
-      <div class="cat-no">02</div>
-      <div class="cat-icon mower"></div>
-      <div class="cat-copy"><h2>Газон и большие площади</h2><p>Газонокосилки, райдеры,<br>садовые тракторы</p></div>
-      <div class="cat-photo lawn-photo"></div>
-      <div class="cat-arrow">→</div>
+    <a class="group-row" href="catalog.html#lawn">
+      <div class="num">02</div><span class="gicon icon2"></span>
+      <div class="gcopy"><h3>Газон и большие площади</h3><p>Газонокосилки, райдеры,<br>садовые тракторы</p></div>
+      <span class="gphoto cat2"></span><span class="arrow">→</span>
     </a>
-    <a class="category-row" href="catalog.html#garden">
-      <div class="cat-no">03</div>
-      <div class="cat-icon saw"></div>
-      <div class="cat-copy"><h2>Сад и участок</h2><p>Пилы, триммеры, воздуходувки,<br>измельчители и другое</p></div>
-      <div class="cat-photo garden-photo"></div>
-      <div class="cat-arrow">→</div>
+    <a class="group-row" href="catalog.html#garden">
+      <div class="num">03</div><span class="gicon icon3"></span>
+      <div class="gcopy"><h3>Сад и участок</h3><p>Пилы, триммеры, воздуходувки,<br>измельчители и другое</p></div>
+      <span class="gphoto cat3"></span><span class="arrow">→</span>
     </a>
-    <a class="category-row" href="catalog.html#smart">
-      <div class="cat-no">04</div>
-      <div class="cat-icon snow"></div>
-      <div class="cat-copy"><h2>Умная и сезонная техника</h2><p>Yarbo Core, снегоуборщики,<br>мотобуксировщики</p></div>
-      <div class="cat-photo smart-photo"></div>
-      <div class="cat-arrow">→</div>
+    <a class="group-row" href="catalog.html#smart">
+      <div class="num">04</div><span class="gicon icon4"></span>
+      <div class="gcopy"><h3>Умная и сезонная техника</h3><p>Yarbo Core, снегоуборщики,<br>мотобуксировщики</p></div>
+      <span class="gphoto cat4"></span><span class="arrow">→</span>
     </a>
   </div>
 </section>
 
-<section class="ai-master" id="ai">
-  <div class="container">
-    <div class="ai-panel">
-      <div class="ai-avatar"><div class="robot-face">●‿●</div></div>
-      <div class="ai-main">
-        <h2>Не знаете, что выбрать?</h2>
-        <p>Расскажите, что хотите делать — поможем подобрать технику из нашего каталога.</p>
-        <div class="ai-input"><input placeholder="Например: у меня 20 соток, хочу косить траву..."><button>➤ Спросить</button></div>
-        <div class="quick"><button>Для участка 20 соток</button><button>Нужен трактор</button><button>Чем косить 50 соток?</button></div>
-      </div>
+<section class="ai-section" id="ai">
+  <div class="container ai-box">
+    <span class="ai-robot"></span>
+    <div class="ai-copy">
+      <h2>Не знаете, что выбрать?</h2>
+      <p>Расскажите, что хотите делать — поможем подобрать<br>технику из нашего каталога.</p>
+      <div class="ask"><input placeholder="Например: у меня 20 соток, хочу косить траву..."><button>➤　Спросить</button></div>
+      <div class="suggestions"><button>◉ Для участка 20 соток</button><button>◉ Нужен трактор</button><button>◉ Чем косить 50 соток?</button></div>
     </div>
+    <div class="leafs">❧</div>
   </div>
 </section>
 
-<section class="offers-master" id="offers">
+<section class="offers" id="offers">
   <div class="container">
-    <div class="section-title-row"><div><h2>Есть на что посмотреть</h2><p>Реальные скидки на технику из нашего каталога.<br>Сегодня может пригодиться и вам — но подписаться и следить за хорошими предложениями точно стоит.</p></div><a href="catalog.html">Все выгодные предложения →</a></div>
+    <div class="section-title"><div><h2>Есть на что посмотреть</h2><p>Реальные скидки на технику из нашего каталога.<br>Сегодня может пригодиться и вам — но подписаться<br>и следить за хорошими предложениями точно стоит.</p></div><a href="catalog.html">Все выгодные предложения →</a></div>
     <div class="product-grid">
-      <article class="product-card"><div class="discount">Скидка -18%</div><button class="heart">♡</button><div class="product-photo p1"></div><h3>Райдер STIGA Park 300</h3><div class="old-price">15 590 BYN</div><div class="new-price">13 990 BYN</div><div class="saving">Экономия 1 600 BYN</div></article>
-      <article class="product-card"><div class="discount">Скидка -15%</div><button class="heart">♡</button><div class="product-photo p2"></div><h3>Мотоблок Нева МБ2</h3><div class="old-price">2 390 BYN</div><div class="new-price">2 030 BYN</div><div class="saving">Экономия 360 BYN</div></article>
-      <article class="product-card"><div class="discount">Скидка -20%</div><button class="heart">♡</button><div class="product-photo p3"></div><h3>Робот-газонокосилка Husqvarna Automower 450X</h3><div class="old-price">4 990 BYN</div><div class="new-price">3 990 BYN</div><div class="saving">Экономия 1 000 BYN</div></article>
-      <article class="product-card"><div class="discount">Скидка -18%</div><button class="heart">♡</button><div class="product-photo p4"></div><h3>Снегоуборщик Champion ST661E</h3><div class="old-price">1 290 BYN</div><div class="new-price">1 060 BYN</div><div class="saving">Экономия 230 BYN</div></article>
+      <article class="product"><div class="badge">Скидка -18%</div><button class="heart">♡</button><span class="product-img p1"></span><h3>Райдер STIGA Park 300</h3><div class="old">15 590 BYN</div><div class="price">13 990 BYN</div><div class="save">▧ Экономия 1 600 BYN</div><button class="cart">🛒</button></article>
+      <article class="product"><div class="badge">Скидка -15%</div><button class="heart">♡</button><span class="product-img p2"></span><h3>Мотоблок Нева МБ2</h3><div class="old">2 390 BYN</div><div class="price">2 030 BYN</div><div class="save">▧ Экономия 360 BYN</div><button class="cart">🛒</button></article>
+      <article class="product"><div class="badge">Скидка -20%</div><button class="heart">♡</button><span class="product-img p3"></span><h3>Робот-газонокосилка<br>Husqvarna 450X</h3><div class="old">4 990 BYN</div><div class="price">3 990 BYN</div><div class="save">▧ Экономия 1 000 BYN</div><button class="cart">🛒</button></article>
+      <article class="product"><div class="badge">Скидка -18%</div><button class="heart">♡</button><span class="product-img p4"></span><h3>Снегоуборщик Champion<br>ST661E</h3><div class="old">1 290 BYN</div><div class="price">1 060 BYN</div><div class="save">▧ Экономия 230 BYN</div><button class="cart">🛒</button></article>
     </div>
-    <div class="telegram-strip"><div class="telegram-icon">➤</div><div><strong>Хотите узнавать о таких предложениях первыми?</strong><p>Мы регулярно выкладываем реальные скидки и специальные цены в Telegram.</p></div><a class="button primary" href="#telegram">Подписаться на Telegram →</a></div>
+    <div class="telegram"><div class="tg-icon">➤</div><div><strong>Хотите узнавать о таких предложениях первыми?</strong><p>Мы регулярно выкладываем реальные скидки и специальные цены в Telegram.</p></div><a class="btn" href="#">Подписаться на Telegram　→</a></div>
   </div>
 </section>
 
-<section class="articles-master" id="articles">
+<section class="articles" id="articles">
   <div class="container">
-    <div class="section-title-row"><div><h2>Полезные статьи</h2></div><a href="#all-articles">Все статьи →</a></div>
+    <div class="section-title"><h2>Полезные статьи</h2><a href="#">Все статьи →</a></div>
     <div class="article-grid">
-      <a class="article-card" href="#article1"><div class="article-photo a1"></div><div class="article-body"><span>Советы</span><h3>Как выбрать райдер для большого участка?</h3><p>Разбираем основные критерии и даём практические рекомендации.</p><small>12 апреля 2025 · 5 мин</small></div></a>
-      <a class="article-card" href="#article2"><div class="article-photo a2"></div><div class="article-body"><span>Эксплуатация</span><h3>Как правильно обкатать бензопилу?</h3><p>Пошаговая инструкция, которая поможет избежать проблем в будущем.</p><small>6 апреля 2025 · 4 мин</small></div></a>
-      <a class="article-card" href="#article3"><div class="article-photo a3"></div><div class="article-body"><span>Обзор</span><h3>Лучшие снегоуборщики в 2025 году</h3><p>Сравниваем популярные модели и помогаем выбрать оптимальный вариант.</p><small>2 апреля 2025 · 6 мин</small></div></a>
-      <a class="article-card" href="#article4"><div class="article-photo a4"></div><div class="article-body"><span>Уход за техникой</span><h3>Весенний уход за газоном: пошаговый план</h3><p>Как подготовить газон после зимы и добиться идеального результата.</p><small>2 апреля 2025 · 4 мин</small></div></a>
+      <article class="article"><span class="article-img a1"></span><div class="tag">Советы</div><h3>Как выбрать райдер<br>для большого участка?</h3><p>Разбираем основные критерии<br>и даём практические рекомендации.</p><div class="meta">12 апреля 2025　　　　　◷ 5 мин</div></article>
+      <article class="article"><span class="article-img a2"></span><div class="tag">Эксплуатация</div><h3>Как правильно обкатать<br>бензопилу?</h3><p>Пошаговая инструкция, которая<br>поможет избежать проблем.</p><div class="meta">6 апреля 2025　　　　　◷ 4 мин</div></article>
+      <article class="article"><span class="article-img a3"></span><div class="tag">Обзор</div><h3>Лучшие снегоуборщики<br>в 2025 году</h3><p>Сравниваем популярные модели<br>и помогаем выбрать оптимальный.</p><div class="meta">2 апреля 2025　　　　　◷ 6 мин</div></article>
+      <article class="article"><span class="article-img a4"></span><div class="tag">Уход за газоном</div><h3>Весенний уход за газоном:<br>пошаговый план</h3><p>Как подготовить газон после зимы<br>и добиться идеального результата.</p><div class="meta">2 апреля 2025　　　　　◷ 4 мин</div></article>
     </div>
   </div>
 </section>
 
-<section class="brands-master">
-  <div class="container"><h2>Техника от производителей, которым доверяют</h2><div class="brand-strip"><b>STIGA</b><b>ZIMANI</b><b>YARBO</b><b>НЕВА</b><b>УГРА</b><b>BELARUS МТЗ</b><span>→</span></div></div>
-</section>
+<section class="brands"><div class="container"><h2>Техника от производителей, которым доверяют</h2><div class="brand-strip"></div></div></section>
 
-<section class="why-master" id="delivery">
-  <div class="container"><h2>Почему выбирают нас</h2><div class="why-grid"><div><strong>Доставка<br>по всей Беларуси<br>от 1 дня</strong></div><div><strong>Гарантия<br>до 3 лет</strong></div><div><strong>Сервисный центр<br>и запчасти</strong></div><div><strong>Рассрочка и кредит<br>без переплат</strong></div></div></div>
-</section>
+<section class="why" id="about"><div class="container"><div class="section-title"><h2>Почему выбирают нас</h2><a href="#">Все бренды →</a></div><div class="why-grid"><div>🚚 <span>Доставка<br>по всей Беларуси<br>от 1 дня</span></div><div>🛡 <span>Гарантия<br>до 3 лет</span></div><div>✳ <span>Сервисный центр<br>и запчасти</span></div><div>▣ <span>Рассрочка и кредит<br>без переплат</span></div></div></div></section>
 
-<section class="service-master" id="service">
-  <div class="container"><div class="service-banner"><div class="service-photo"></div><div class="service-copy"><h2>Поможем подобрать<br>и обслужим технику</h2><p>Настроим, объясним, подскажем по эксплуатации и обслуживанию. Вы всегда можете к нам обратиться.</p><a class="button light" href="#contacts">Подробнее о сервисе →</a></div><div class="service-points"><div>Сервисный центр<br>и мастера</div><div>Оригинальные<br>запчасти</div><div>Запчасти<br>для работы</div></div></div></div>
-</section>
+<section class="service" id="service"><div class="container service-box"><span class="service-photo"></span><div class="service-copy"><h2>Поможем подобрать<br>и обслужим технику</h2><p>Настроим, объясним, подскажем по эксплуатации<br>и обслуживанию. Вы всегда можете к нам<br>обратиться.</p><a class="service-btn" href="#">Подробнее о сервисе　→</a></div><div class="service-points"><div>◉ Сервисный центр<br>и мастера</div><div>⬡ Оригинальные<br>запчасти</div><div>♧ Запчасти<br>под рукой</div></div></div></section>
 </main>
 
-<footer class="footer-master" id="contacts">
-  <div class="container footer-grid">
-    <div><a class="logo footer-logo" href="index.html"><span class="logo-leaf">◆</span><span>PROMOTOBLOK</span></a><p>Техника, которая работает на вас</p></div>
-    <div><h4>Контакты</h4><p><a href="tel:+375291234567">+375 29 123-45-67</a><br>Пн–Вс 9:00–21:00<br>Минск, ул. Примерная, 10</p></div>
-    <div><h4>Покупателям</h4><p>Доставка и оплата<br>Гарантия<br>Сервис<br>Рассрочка и кредит<br>О нас</p></div>
-    <div><h4>Информация</h4><p>Полезные статьи<br>Вопросы и ответы<br>Контакты<br>Политика конфиденциальности</p></div>
-    <div><h4>Мы в соцсетях</h4><p>Telegram · YouTube · Instagram</p><div class="newsletter"><input placeholder="Ваш e-mail"><button>→</button></div></div>
-  </div>
-  <div class="container footer-bottom">© 2026 PROMOTOBLOK.BY. Все права защищены.</div>
-</footer>
-
+<footer class="footer" id="delivery"><div class="container footer-top"><div class="foot-brand"><span class="foot-logo"></span><small>Техника, которая работает на вас</small></div><div><h4>Контакты</h4><p>↳ +375 29 123-45-67<br>↳ Пн–Пт 9:00–21:00<br>↳ Сб–Вс 9:00–18:00<br>⌖ г. Минск, ул. Примерная, 10</p></div><div><h4>Покупателям</h4><p>Доставка и оплата<br>Гарантия<br>Сервис<br>Рассрочка и кредит<br>О нас</p></div><div><h4>Информация</h4><p>Полезные статьи<br>Вопросы и ответы<br>Контакты<br>Политика конфиденциальности<br>Пользовательское соглашение</p></div><div><h4>Мы в соцсетях</h4><p>➤ ● ◉ ◎ ♪</p><div class="email">Ваш e-mail <b>×</b></div></div></div><div class="container footer-bottom">© 2025 PROMOTOBLOK. Все права защищены.</div></footer>
 <script src="app.js"></script>
-</body>
-</html>
+</body></html>
