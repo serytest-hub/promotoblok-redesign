@@ -1,0 +1,1 @@
+Raster assets extracted from the approved homepage master. Managed by ChatGPT for the PROMOTOBLOK redesign prototype.
