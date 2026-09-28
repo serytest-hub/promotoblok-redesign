@@ -1,0 +1,14 @@
+/* PROMOTOBLOK master correction pass v5 */
+.logo,.foot-logo{background-image:url('assets-v2/logo-master.svg')!important;background-size:contain!important;background-repeat:no-repeat!important;background-position:center!important}
+.cat1{background-image:url('assets-v2/cat1.svg')!important}.cat4{background-image:url('assets-v2/cat4.svg')!important}
+@media(min-width:701px){
+.container{width:min(1180px,calc(100% - 48px))!important}
+.site-header,.header-row{height:58px!important}
+.logo{width:143px!important;height:31px!important}
+.hero{height:265px!important}.hero h1{font-size:41px!important;line-height:1.02!important}.hero-copy{max-width:500px!important}
+.group-row{height:94px!important;grid-template-columns:46px 48px 260px 1fr 28px!important}.gphoto{height:72px!important}
+.ai-box{min-height:126px!important}.robot{width:110px!important;height:118px!important}
+.product{min-height:226px!important}.product-img{height:115px!important}.article-img{height:108px!important}
+.brands-img{height:49px!important}.service-box{min-height:116px!important}
+}
+@media(max-width:700px){.logo{background-size:contain!important}.cat1,.cat4{background-size:cover!important}}
