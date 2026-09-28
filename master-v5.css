@@ -1,1 +1,20 @@
-.hero-photo{background-image:url('assets/hero-master.svg')!important;background-size:cover!important;background-position:center!important;transform:none!important}.art3{background-image:url('assets/article3-master.svg')!important}.art4{background-image:url('assets/article4-master.svg')!important}.brands-img{display:block!important;background:#fff url('assets/brands-master2.svg') center/contain no-repeat!important;border:1px solid #d7ecea!important}.brands-img:before{content:none!important}@media(min-width:701px){.hero{height:270px!important}.hero-copy{max-width:510px!important}.hero h1{font-size:40px!important;line-height:1.02!important}.group-row{height:96px!important}.gphoto{height:68px!important}.ai-box{min-height:128px!important}}
+/* PROMOTOBLOK precision pass v6 */
+.hero-photo{background-image:url('assets/hero-master.svg')!important;background-size:cover!important;background-position:center!important;transform:none!important}
+.hero-fade{background:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.94) 18%,rgba(255,255,255,.67) 36%,rgba(255,255,255,.08) 58%,rgba(255,255,255,0) 72%)!important}
+.cat3{background-image:url('assets/a2.svg')!important;background-position:center 52%!important}
+.art3{background-image:url('assets/article3-master.svg')!important}.art4{background-image:url('assets/article4-master.svg')!important}
+.brands-img{display:block!important;background:#fff url('assets/brands-master2.svg') center/contain no-repeat!important;border:1px solid #d7ecea!important}.brands-img:before{content:none!important}
+@media(min-width:701px){
+.container{width:min(1180px,calc(100% - 46px))!important}
+.site-header,.header-row{height:56px!important}
+.logo{width:142px!important;height:30px!important}.main-nav{gap:27px!important;font-size:11px!important}
+.hero{height:292px!important}.hero-copy{max-width:500px!important}.hero h1{font-size:42px!important;line-height:1.01!important;letter-spacing:-.025em!important}.hero p{font-size:11.5px!important;line-height:1.45!important}.kicker{font-size:10px!important}.hero .btn{padding:10px 18px!important}
+.group-row{height:108px!important;grid-template-columns:47px 49px 270px 1fr 28px!important}.gphoto{height:76px!important}.gcopy h2{font-size:15px!important}.gcopy p{font-size:9px!important}.num{font-size:17px!important}
+.ai{padding:18px 0 20px!important}.ai-box{min-height:151px!important;grid-template-columns:132px 1fr!important;padding:0 26px!important}.robot{width:120px!important;height:140px!important}.ai-copy h2{font-size:21px!important}.ai-copy>p{font-size:9px!important}.ask{max-width:760px!important;grid-template-columns:1fr 138px!important}.ask input,.ask button{height:34px!important}.quick button{font-size:7px!important}
+.offers,.articles,.brands,.why,.service{padding:22px 0!important}.section-head h2,.brands h2,.why h2{font-size:23px!important}.section-head p{font-size:8.2px!important}.product{min-height:260px!important;padding:11px!important}.product-img{height:132px!important}.product h3{font-size:9.5px!important}.product strong{font-size:13px!important}.telegram{min-height:60px!important}
+.article-img{height:128px!important}.article-body{padding:9px!important}.article-body h3{font-size:9.3px!important}.article-body p{font-size:7.2px!important;min-height:33px!important}
+.brands-img{height:55px!important}.why-grid>div{min-height:73px!important}.service-box{min-height:132px!important;grid-template-columns:270px 1fr 230px!important}.service-copy{padding:17px 22px!important}.service-copy h2{font-size:19px!important}.footer{padding:22px 0 10px!important}.footer-grid{gap:24px!important}.footer-grid h4{font-size:8.8px!important}.footer-grid p{font-size:7.2px!important;line-height:1.65!important}.footer-bottom{margin-top:12px!important}
+}
+@media(max-width:700px){
+.hero{height:245px!important}.hero h1{font-size:30px!important}.group-row{height:73px!important}.gphoto{display:none!important}.ai-box{min-height:128px!important}.product{min-height:104px!important}.article-img{height:92px!important}.brands-img{height:40px!important}
+}
