@@ -1,0 +1,1 @@
+HQ raster assets for homepage.
