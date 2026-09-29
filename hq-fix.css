@@ -1,6 +1,6 @@
-/* HQ asset pass: real raster assets with correct MIME/file extensions */
+/* HQ asset pass: verified real raster assets */
 .hero{height:304px!important;background:#fff!important;position:relative!important;overflow:hidden!important}
-.hero-photo{position:absolute!important;inset:0!important;background-image:url('assets-hq/hero.jpg')!important;background-repeat:no-repeat!important;background-position:right center!important;background-size:auto 100%!important}
+.hero-photo{position:absolute!important;inset:0!important;background-image:url('assets-hq/hero-real.jpg')!important;background-repeat:no-repeat!important;background-position:right center!important;background-size:auto 100%!important}
 .hero-fade{display:block!important;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.98) 24%,rgba(255,255,255,.82) 41%,rgba(255,255,255,.22) 59%,rgba(255,255,255,0) 74%)!important}
 .hero-inner{position:relative!important;z-index:2!important}
 .hero-copy{max-width:510px!important}
@@ -8,7 +8,7 @@
 
 .gphoto{height:68px!important;background-repeat:no-repeat!important;background-position:center!important;background-size:cover!important;overflow:hidden!important}
 .gphoto:before{background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.74) 12%,rgba(255,255,255,0) 34%)!important}
-.cat1{background-image:url('assets-hq/cat1.jpg')!important}
+.cat1{background-image:url('assets-hq/cat1-real.jpg')!important}
 .cat2{background-image:url('assets/cat2.svg')!important}
 .cat3{background-image:url('assets/a2.svg')!important}
 .cat4{background-image:url('assets/article3-master.svg')!important}
