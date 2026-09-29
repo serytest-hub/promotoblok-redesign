@@ -1,0 +1,22 @@
+/* HQ asset pass: replace broken SVG wrappers with real rendered assets */
+.hero{height:304px!important;background:#fff!important;position:relative!important;overflow:hidden!important}
+.hero-photo{position:absolute!important;inset:0!important;background-image:url('assets-hq/hero.webp')!important;background-repeat:no-repeat!important;background-position:center!important;background-size:cover!important}
+.hero-fade{display:block!important;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.98) 24%,rgba(255,255,255,.82) 41%,rgba(255,255,255,.22) 59%,rgba(255,255,255,0) 74%)!important}
+.hero-inner{position:relative!important;z-index:2!important}
+.hero-copy{max-width:510px!important}
+.hero h1{font-size:42px!important;line-height:1.02!important;letter-spacing:-.03em!important}
+
+.gphoto{height:68px!important;background-repeat:no-repeat!important;background-position:center!important;background-size:cover!important;overflow:hidden!important}
+.gphoto:before{background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.74) 12%,rgba(255,255,255,0) 34%)!important}
+.cat1{background-image:url('assets-hq/cat1.webp')!important}
+.cat2{background-image:url('assets/cat2.svg')!important}
+.cat3{background-image:url('assets/a2.svg')!important}
+.cat4{background-image:url('assets/article3-master.svg')!important}
+
+/* eliminate the cheap stretched look */
+.group-row{grid-template-columns:46px 48px 260px minmax(0,1fr) 28px!important;height:94px!important}
+.gcopy h2{font-size:15px!important;font-weight:700!important;letter-spacing:-.01em!important}
+.gcopy p{font-size:9px!important;line-height:1.45!important}
+
+@media(max-width:900px){.hero{height:270px!important}.hero h1{font-size:36px!important}}
+@media(max-width:700px){.hero{height:245px!important}.hero-photo{background-position:66% center!important}.hero h1{font-size:30px!important}.gphoto{display:none!important}}
