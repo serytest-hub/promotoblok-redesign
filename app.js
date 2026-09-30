@@ -4,7 +4,7 @@ document.querySelectorAll('[data-demo]').forEach(el=>el.addEventListener('click'
     const h=l.getAttribute('href')||'';
     if(/styles-v4|fix-v5|master-v5|layout-v6|clean-v8|clean-v9|clean-v10|hq-fix|master-top/.test(h)) l.disabled=true;
   });
-  ['homepage.css?v=4','master-top.css?v=2'].forEach(href=>{
+  ['homepage.css?v=5','master-top.css?v=3'].forEach(href=>{
     const l=document.createElement('link');
     l.rel='stylesheet';
     l.href=href;
