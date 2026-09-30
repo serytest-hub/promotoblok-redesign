@@ -1,13 +1,30 @@
-/* Exact master-backed homepage top. Visual baseline taken directly from approved master. */
+/* Approved master hybrid: master image is used only as photographic reference;
+   text, icons and controls remain live HTML so the page stays sharp and usable. */
 .hero{
-  height:auto!important;
-  aspect-ratio:650/151!important;
-  width:min(1180px,100%)!important;
-  margin:0 auto!important;
-  background:url('assets-master/hero.jpg') center/100% 100% no-repeat!important;
+  height:274px!important;
+  width:100%!important;
+  margin:0!important;
+  position:relative!important;
   overflow:hidden!important;
+  background:#fff url('assets-master/hero.jpg') right center/auto 100% no-repeat!important;
 }
-.hero>*{display:none!important}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:linear-gradient(90deg,#fff 0%,#fff 35%,rgba(255,255,255,.98) 43%,rgba(255,255,255,.62) 53%,rgba(255,255,255,0) 68%);
+}
+.hero>*{display:block!important}
+.hero-photo,.hero-fade{display:none!important}
+.hero-inner{height:100%!important;position:relative!important;z-index:2!important;display:flex!important;align-items:center!important}
+.hero-copy{max-width:520px!important}
+.hero .kicker{font-size:11px!important;letter-spacing:.08em!important;margin-bottom:8px!important;color:#078c69!important;font-weight:800!important}
+.hero h1{font-size:42px!important;line-height:1.02!important;letter-spacing:-.035em!important;margin:0 0 11px!important;font-weight:800!important;color:#07545b!important}
+.hero p{font-size:12px!important;line-height:1.5!important;margin:0 0 17px!important;color:#47777b!important}
+.hero .btn{min-height:38px!important;padding:0 20px!important;font-size:10px!important}
+
 .groups{background:#fff!important}
 .groups .container{
   width:min(1180px,calc(100% - 48px))!important;
@@ -16,32 +33,76 @@
   padding:0!important;
   display:block!important;
 }
-.groups .group-row{display:none!important}
-.groups .container::before,.groups .container::after{
-  content:"";
-  display:block;
-  width:100%;
-  background-position:center;
-  background-size:100% 100%;
-  background-repeat:no-repeat;
+.groups .container::before,.groups .container::after{display:none!important}
+.groups .group-row{
+  height:92px!important;
+  display:grid!important;
+  grid-template-columns:48px 46px 275px minmax(0,1fr) 28px!important;
+  align-items:center!important;
+  border-bottom:1px solid #d8ece9!important;
+  overflow:hidden!important;
+  background:#fff!important;
 }
-.groups .container::before{
-  aspect-ratio:650/113;
-  background-image:url('assets-master/groups1.jpg');
+.groups .num{font-size:16px!important;color:#9dc7c9!important}
+.groups .gicon{width:31px!important;height:31px!important}
+.groups .gcopy h2{font-size:15px!important;line-height:1.2!important;margin:0 0 4px!important;color:#07545b!important;font-weight:700!important}
+.groups .gcopy p{font-size:9px!important;line-height:1.45!important;margin:0!important;color:#75979a!important}
+.groups .gphoto{
+  height:68px!important;
+  min-width:0!important;
+  background-repeat:no-repeat!important;
+  background-position:right center!important;
+  background-size:auto 68px!important;
+  position:relative!important;
 }
-.groups .container::after{
-  aspect-ratio:650/113;
-  background-image:url('assets-master/groups2.jpg');
+.groups .gphoto::before{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.92) 14%,rgba(255,255,255,0) 38%)!important;
 }
-.ai{padding:0!important;background:#fff!important}
-.ai .container{
-  width:min(1180px,calc(100% - 48px))!important;
-  margin:0 auto!important;
-  aspect-ratio:746/124!important;
-  background:url('assets-master/ai.jpg') center/100% 100% no-repeat!important;
+.groups .cat1{background-image:url('assets/cat1.svg')!important}
+.groups .cat2{background-image:url('assets/cat2.svg')!important}
+.groups .cat3{background-image:url('assets/cat3.svg')!important}
+.groups .cat4{background-image:url('assets/cat4.svg')!important}
+.groups .arrow{font-size:18px!important;color:#07966f!important;justify-self:end!important}
+
+.ai{padding:18px 0 20px!important;background:#fff!important}
+.ai .container{width:min(1180px,calc(100% - 48px))!important;margin:0 auto!important;aspect-ratio:auto!important;background:none!important}
+.ai .ai-box{
+  display:grid!important;
+  min-height:126px!important;
+  grid-template-columns:126px 1fr!important;
+  gap:16px!important;
+  align-items:center!important;
+  padding:0 26px!important;
+  border-radius:14px!important;
+  background:linear-gradient(90deg,#e5f7f3 0%,#f8fdfc 58%,#e9f7f0 100%)!important;
+  overflow:hidden!important;
 }
-.ai .ai-box{display:none!important}
+.ai .robot{width:112px!important;height:121px!important;align-self:end!important}
+.ai .ai-copy h2{font-size:21px!important;line-height:1.1!important;margin:0 0 5px!important}
+.ai .ai-copy>p{font-size:9px!important;margin:0 0 10px!important}
+.ai .ask{display:grid!important;grid-template-columns:minmax(0,1fr) 136px!important;gap:9px!important;max-width:770px!important}
+.ai .ask input,.ai .ask button{height:34px!important}
+.ai .quick{display:flex!important;gap:7px!important;margin-top:7px!important;flex-wrap:wrap!important}
+
+@media(max-width:900px){
+  .hero{height:250px!important;background-position:62% center!important}
+  .hero h1{font-size:36px!important}
+  .groups .group-row{grid-template-columns:42px 42px 230px minmax(0,1fr) 24px!important}
+}
 @media(max-width:700px){
-  .hero{width:100%!important}
-  .groups .container,.ai .container{width:100%!important}
+  .hero{height:245px!important;background-position:68% center!important;background-size:auto 100%!important}
+  .hero::before{background:linear-gradient(90deg,#fff 0%,#fff 48%,rgba(255,255,255,.88) 68%,rgba(255,255,255,0) 100%)!important}
+  .hero h1{font-size:30px!important}
+  .hero p{font-size:11px!important}
+  .groups .container,.ai .container{width:calc(100% - 24px)!important}
+  .groups .group-row{height:76px!important;grid-template-columns:34px 38px 1fr 20px!important}
+  .groups .gphoto{display:none!important}
+  .groups .gcopy h2{font-size:14px!important}
+  .groups .gcopy p{font-size:8px!important}
+  .ai .ai-box{grid-template-columns:1fr!important;padding:18px!important;min-height:0!important}
+  .ai .robot{display:none!important}
+  .ai .ask{grid-template-columns:1fr!important}
 }
